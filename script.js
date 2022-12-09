@@ -73,7 +73,7 @@ class Player {
 let random=Math.ceil(Math.random()*attackDmg)
     // Subtract the enemy health with the damageAmount
 enemy.health-=random
-if(player.name=='Kuku'){
+if(player.name==p2.name){
     updateGame(enemy,player,game)
     return
 }
@@ -92,7 +92,7 @@ let random=Math.ceil(Math.random()*5)
     // Add hpAmount to players health
 player.health+=random
     //  Update the game and DOM with updateGame()
-    if(player.name=='Kuku'){
+    if(player.name==p2.name){
         updateGame(p1,player,game)
         return
     }
